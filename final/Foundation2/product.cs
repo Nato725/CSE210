@@ -18,7 +18,7 @@ public class Product
         return _name;
     }
 
-    public decimal GetPrice()
+    public double GetPrice()
     {
         return _price;
     }
@@ -28,7 +28,7 @@ public class Product
         return _quantity;
     }
 
-    public decimal GetTotalValue()
+    public double GetTotalValue()
     {
         return _price * _quantity;
     }
