@@ -4,14 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Address address1 = new Address("853 N 1st St", "Boise", "ID", "83702");
+        Address address1 = new Address("853 N 1st St", "Boise", "ID", "83702", "USA");
         Customer customer1 = new Customer("Chris Shale", address1);
         Order order1 = new Order(customer1);
 
         order1.AddProduct(new Product("Talaria", "MTSX60", 10.99, 2));
         order1.AddProduct(new Product("Tilapia", "FISHX60", 18.23, 4));
 
-        Address address2 = new Address("759 Green St", "Melbourne", "VIC", "10001");
+        Address address2 = new Address("759 Green St", "Melbourne", "VIC", "10001", "Australia");
         Customer customer2 = new Customer("Terrance Rain", address2);
         Order order2 = new Order(customer2);
 
