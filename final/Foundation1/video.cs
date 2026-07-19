@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 public class Video
 {
-    private string _title;
-    private string _author;
-    private int _length;
-    private List<Comment> _comments;
+    public string _title;
+    public string _author;
+    public int _length;
+    public List<Comment> _comments;
 
     public Video(string title, string author, int length)
     {
@@ -35,6 +35,8 @@ public class Video
 
         foreach (var comment in _comments)
         {
-            Console.WriteLine($"Comment by {comment.CommenterName}: {comment.CommentText}");
+            Console.WriteLine($"Comment by {comment._commenterName}: {comment._commentText}");
+        }
     }
 }
+    
